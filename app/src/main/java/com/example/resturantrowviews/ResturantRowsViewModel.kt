@@ -14,4 +14,3 @@ class ResturantRowsViewModel : ViewModel() {
     val resturantList : StateFlow<List<restItem>> = repository.getResturants()
         .stateIn(viewModelScope, SharingStarted.Lazily, emptyList())
 }
-//jhhhh
